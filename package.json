@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin":{
-    "directorg":"./main.js"
+  "bin": {
+    "directorg": "./main.js"
   },
   "repository": {
     "type": "git",
