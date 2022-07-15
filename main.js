@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 let fs = require("fs");
 let path = require("path");
 
@@ -25,12 +27,13 @@ switch (command) {
         helpFn();
         break;
     default:
-        console.log(`Please input a command from the given menu :
-                node main.js tree "directoryPath"
-                node main.js organize Duplicate "directoryPath"
-                node main.js organize Original "directoryPath"
-                node main.js help
-        `);
+        console.log(`
+        List of All the commands:
+            directorg tree "directoryPath"
+            directorg organize copy "directoryPath"
+            directorg organize cut "directoryPath"
+            directorg help
+                    `);
         break;
 }
 
@@ -38,10 +41,10 @@ switch (command) {
 function helpFn() {
     console.log(`
     List of All the commands:
-    node main.js tree "directoryPath"
-    node main.js organize Duplicate "directoryPath"
-    node main.js organize Original "directoryPath"
-    node main.js help
+        directorg tree "directoryPath"
+        directorg organize copy "directoryPath"
+        directorg organize cut "directoryPath"
+        directorg help
                 `);
 }
 
@@ -51,7 +54,7 @@ function organizeFn(dup,dirPath) {
     let destPath;
     if(dup==undefined)
     {
-        console.log("Enter Duplicate or Orginal");
+        console.log("Enter cut or copy");
         return;
     }
     if (dirPath == undefined) {
@@ -122,7 +125,7 @@ function sendFiles(dup, srcFilePath, dest, category) {
     let fileName = path.basename(srcFilePath);
     let destFilePath = path.join(categoryPath, fileName);
     fs.copyFileSync(srcFilePath, destFilePath);
-    if(dup=="Original")
+    if(dup=="cut" || dup=="Cut")
     {fs.unlinkSync(srcFilePath);}
     // console.log(fileName, "copied to ", category);
 

@@ -1,0 +1,22 @@
+{
+  "name": "directorg",
+  "version": "1.0.0",
+  "description": "CLI to organize messy directories ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin":{
+    "directorg":"./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhinav912/directorg.git"
+  },
+  "author": "Abhinav Goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhinav912/directorg/issues"
+  },
+  "homepage": "https://github.com/abhinav912/directorg#readme"
+}
