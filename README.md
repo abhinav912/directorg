@@ -1,9 +1,17 @@
+# Directorg
 Directorg is a CLI to organize messy directories
 
-Use "npm i directorg" to install as npm package
+## Installing npm package
+```bash
+npm i directorg
+```
 
-List of All the commands:
-directorg tree "directoryPath"
-directorg organize copy "directoryPath"
-directorg organize cut "directoryPath"
-directorg help
+## List of All the commands:
+
+    directorg tree "directoryPath"
+
+    directorg organize copy "directoryPath"
+
+    directorg organize cut "directoryPath"
+
+    directorg help
