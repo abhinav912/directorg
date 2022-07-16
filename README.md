@@ -1,10 +1,18 @@
 # Directorg
+
 Directorg is a CLI to organize messy directories
 
-## Installing npm package
+## Installing this package
+
 ```bash
-npm i directorg
+npm i directorg -g
+
+    OR
+
+npm i directorg --location=global
 ```
+
+**Note**: While running above commands you should have admin privileges
 
 ## List of All the commands:
 
